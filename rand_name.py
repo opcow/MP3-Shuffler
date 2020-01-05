@@ -7,6 +7,7 @@ import math
 # requires a target directory. defaults to mp3 files if no wildcards are given
 if len(sys.argv) < 2:
     print('Please provide a path to the files and optional file glob.')
+    sys.exit(1)
 
 os.chdir(sys.argv[1])
 if len(sys.argv) > 2:
